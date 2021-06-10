@@ -1,0 +1,2 @@
+# Area
+Area - EPITECH project. This project asks us to implement a software suite that functions similar to that of IFTTT and/or Zapier. This software suite will be broken into three parts : • An application server to implement all the features listed below (see Features) • A web client to use the application from your browser by querying the application server • A mobile client to use the application from your phone by querying the application server
