@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="520px" height="360px" viewBox="0 0 520 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>css-gradient-swatches</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="3.061617e-15%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#09198A" offset="0%"></stop>
+            <stop stop-color="#1F2667" stop-opacity="0.9" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="44.2150562%" x2="100%" y2="44.2150563%" id="linearGradient-2">
+            <stop stop-color="#00C9FF" offset="0%"></stop>
+            <stop stop-color="#92FE9D" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-3">
+            <stop stop-color="#522DB8" offset="0%"></stop>
+            <stop stop-color="#1C7CE0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="44.2150562%" x2="100%" y2="44.2150563%" id="linearGradient-4">
+            <stop stop-color="#3A1C71" offset="0%"></stop>
+            <stop stop-color="#FDBB2D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="css-gradient-swatches">
+            <g id="Group" transform="translate(-2.000000, -2.000000)">
+                <rect id="Rectangle-16" fill="url(#linearGradient-1)" transform="translate(300.904872, 106.521739) rotate(45.000000) translate(-300.904872, -106.521739) " x="226.134571" y="31.6521739" width="149.540603" height="149.73913" rx="8"></rect>
+                <rect id="Rectangle-16-Copy" fill="url(#linearGradient-2)" transform="translate(225.526682, 257.478261) rotate(45.000000) translate(-225.526682, -257.478261) " x="150.756381" y="182.608696" width="149.540603" height="149.73913" rx="8"></rect>
+                <rect id="Rectangle-16-Copy-3" fill="url(#linearGradient-3)" transform="translate(106.380510, 140.608696) rotate(45.000000) translate(-106.380510, -140.608696) " x="31.6102088" y="65.7391304" width="149.540603" height="149.73913" rx="8"></rect>
+                <rect id="Rectangle-16-Copy-2" fill="url(#linearGradient-4)" transform="translate(417.619490, 219.739130) rotate(45.000000) translate(-417.619490, -219.739130) " x="342.849188" y="144.869565" width="149.540603" height="149.73913" rx="8"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

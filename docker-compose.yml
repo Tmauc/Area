@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+
+  mobile:
+    build: './mobile'
+    volumes:
+      - ./mobile_client/:/usr/app
+
+  server:
+    build: './server'
+    ports:
+    - "8080:8080"
+    volumes:
+      - ./server/:/usr/app
+
+  webclient:
+    depends_on:
+      - mobile
+      - server
+    build: './webclient'
+    ports:
+      - "8081:8081"
+    volumes:
+      - ./web_client/:/usr/app
+      - apk-volume:/usr/app/src/assets/apkBuild
+
+volumes:
+  apk-volume:

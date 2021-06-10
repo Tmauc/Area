@@ -1,0 +1,26 @@
+<h1 mat-dialog-title>You choose {{data.action}} [{{data.actionService}}]</h1>
+  <div mat-dialog-content>
+        <div class="container-fluid">
+          <div class="row">
+          <h4 style="margin-top: 8px;margin-right: 10px;">Choose an reaction :</h4>
+          <mat-menu #appMenu="matMenu">
+            <ng-template matMenuContent>
+              <!--button [matMenuTriggerFor]="facebookMenu" mat-menu-item>Facebook</button-->
+              <button mat-menu-item (click)="selectReaction('Mail', 'sendMail')">Send mail</button>
+            </ng-template>
+          </mat-menu>
+          <button id="selectButtonReaction" mat-icon-button [matMenuTriggerFor]="appMenu" [matMenuTriggerData]="{name: 'Sally'}">{{data.reaction}}</button>
+          <mat-menu #facebookMenu="matMenu">
+            <button mat-menu-item (click)="selectReaction('Facebook', 'new_post')">New post</button>
+            <button mat-menu-item (click)="selectReaction('Facebook', 'new_link')">New link</button>
+          </mat-menu>
+        </div>
+        </div>
+  </div>
+<div mat-dialog-actions>
+  <button mat-button (click)="backModal()">Back</button>
+  <button *ngIf="disabledButton() == 0; else buttonDisabledReaction" mat-button (click)="endModal()" cdkFocusInitial>End</button>
+  <ng-template #buttonDisabledReaction>
+    <button id="nextbuttonReaction" disabled mat-button (click)="endModal()" cdkFocusInitial>End</button>
+  </ng-template>
+</div>

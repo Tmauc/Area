@@ -1,0 +1,138 @@
+/* ----- Normalize ----- */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* ----- Typography ----- */
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.625;
+    color: #666;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #333333;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 56px;
+    color:  #757575;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 15px;
+}
+
+h6 {
+    font-size: 13px;
+}
+
+blockquote {
+    margin: 0;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.navbar-sidebar {
+    margin-top: 10%;
+}
+
+.text {
+    margin-bottom: 20px;
+}
+
+.widgetContainer {
+    display: table;
+    //position: relative;
+}
+
+.column-icon-widget {
+    height: 100%;
+    padding:10% 10px 10% 15px;
+    border-left: #ffffff;
+    border-left-style: dashed;
+    border-left-width: 1px;
+}
+
+.icon-widget:hover {
+    color:rgb(190, 108, 14);
+}
+
+.modal.show {
+    display: block;
+}
+.modal-backdrop.fade {
+    opacity: 0.5;
+}
+   
+.modal-open .modal {
+    opacity: 1;
+}
+
+.servicesBtn {
+    margin: 20px;
+    position: relative;
+}
+
+button.mat-button {
+    outline: none;
+}
+
+button.mat-icon-button  {
+    outline: none;
+}
+
+.chooseTitle {
+    padding-top: 200px;
+}
+
+.mat-menu-item {
+    color: #666 !important;
+    font-size: 20px;
+    outline: none;
+}
+  
+button.mat-menu-item{
+    background-color: white;
+    outline: none;
+}
+  
+button.mat-menu-item:hover {
+    background-color: blue;
+    color: #fff !important;
+}
+
+.pImage {
+    margin-top: 12px;
+}

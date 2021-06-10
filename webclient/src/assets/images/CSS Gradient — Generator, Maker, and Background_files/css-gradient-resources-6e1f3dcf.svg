@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="518px" height="356px" viewBox="0 0 518 356" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>css-gradient-resources</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="716" height="248" rx="4"></rect>
+        <filter x="-8.5%" y="-23.8%" width="117.0%" height="149.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.121568627   0 0 0 0 0.149019608   0 0 0 0 0.403921569  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#C1C4CA" offset="0%"></stop>
+            <stop stop-color="#DFE1E6" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="44.2150562%" x2="100%" y2="44.2150563%" id="linearGradient-4">
+            <stop stop-color="#000851" offset="0%"></stop>
+            <stop stop-color="#1CB5E0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-5">
+            <stop stop-color="#424EA0" offset="0%"></stop>
+            <stop stop-color="#1F2667" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-6">
+            <stop stop-color="#6F7E92" offset="0%"></stop>
+            <stop stop-color="#3C4859" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="css-gradient-resources">
+            <g id="Group-3" transform="translate(35.000000, 77.000000)">
+                <g id="Group">
+                    <g id="Group-2">
+                        <g id="Rectangle-26-Copy">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <rect stroke="#DFE1E6" stroke-width="1" x="0.5" y="0.5" width="715" height="247" rx="4"></rect>
+                        </g>
+                        <rect id="Rectangle" fill="url(#linearGradient-3)" x="42.844649" y="40.372093" width="72.5063291" height="9.06312292"></rect>
+                        <rect id="Rectangle-2" fill="url(#linearGradient-4)" x="42.844649" y="66.7375415" width="291.673188" height="20.5980066"></rect>
+                        <rect id="Rectangle-2-Copy" fill="url(#linearGradient-5)" x="42.844649" y="183.734219" width="92.2807825" height="20.5980066"></rect>
+                        <rect id="Rectangle-3" fill="url(#linearGradient-6)" x="41.1967779" y="101.342193" width="395.489068" height="62.6179402"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

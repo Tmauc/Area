@@ -1,0 +1,168 @@
+<h1 mat-dialog-title>You choose {{data.actionService}}</h1>
+  <div mat-dialog-content>
+        <div class="container-fluid">
+          <div class="row">
+          <h4 style="margin-top: 8px;margin-right: 10px;">Choose an action:</h4>
+          <mat-menu #facebookMenu="matMenu">
+            <ng-template matMenuContent>
+              <button (click)="selectAction('new_post', '')" mat-menu-item>New post</button>
+              <button (click)="selectAction('new_relationship', '')" mat-menu-item>New relationship</button>
+            </ng-template>
+          </mat-menu>
+          <mat-menu #githubMenu="matMenu">
+            <ng-template matMenuContent>
+              <button (click)="selectAction('new_following', '')" mat-menu-item>New following</button>
+              <button (click)="selectAction('new_follower', '')" mat-menu-item>New followers</button>
+              <button (click)="selectAction('request_repos', '')" mat-menu-item>New request repos</button>
+              <button (click)="selectAction('request_stash', '')" mat-menu-item>New request stash</button>
+            </ng-template>
+          </mat-menu>
+          <mat-menu #weatherMenu="matMenu">
+            <ng-template matMenuContent>
+              <button [matMenuTriggerFor]="weatherChangeMenu" mat-menu-item>Weather temperature</button>
+            </ng-template>
+          </mat-menu>
+          <mat-menu #moneyMenu="matMenu">
+            <ng-template matMenuContent>
+              <button [matMenuTriggerFor]="moneycurrencyMenu" mat-menu-item>Change money courses</button>
+            </ng-template>
+          </mat-menu>
+          <mat-menu #nasaMenu="matMenu">
+            <ng-template matMenuContent>
+              <button (click)="selectAction('earth_speed')" mat-menu-item>Earth speed</button>
+            </ng-template>
+          </mat-menu>
+          <mat-menu #redditMenu="matMenu">
+            <ng-template matMenuContent>
+              <button [matMenuTriggerFor]="redditAccountMenu" mat-menu-item>New post</button>
+            </ng-template>
+          </mat-menu>
+          <mat-menu #youtubeMenu="matMenu">
+            <ng-template matMenuContent>
+              <button [matMenuTriggerFor]="youtubeVideoLikeMenu" mat-menu-item>New like</button>
+              <button [matMenuTriggerFor]="youtubeVideoDislikeMenu" mat-menu-item>New dislike</button>
+              <button [matMenuTriggerFor]="youtubeVideoCommentMenu" mat-menu-item>New comment</button>
+              <button [matMenuTriggerFor]="youtubeViewsCommentMenu" mat-menu-item>New views</button>
+            </ng-template>
+          </mat-menu>
+          <button *ngIf="whatSelectedAction() == 1" id="selectButtonAction" mat-icon-button [matMenuTriggerFor]="facebookMenu" [matMenuTriggerData]="{name: 'Sally'}">{{data.action}}</button>
+          <button *ngIf="whatSelectedAction() == 2" id="selectButtonAction" mat-icon-button [matMenuTriggerFor]="githubMenu" [matMenuTriggerData]="{name: 'Sally'}">{{data.action}}</button>
+          <button *ngIf="whatSelectedAction() == 3" id="selectButtonAction" mat-icon-button [matMenuTriggerFor]="weatherMenu" [matMenuTriggerData]="{name: 'Sally'}">{{data.action}}</button>
+          <button *ngIf="whatSelectedAction() == 4" id="selectButtonAction" mat-icon-button [matMenuTriggerFor]="moneyMenu" [matMenuTriggerData]="{name: 'Sally'}">{{data.action}}</button>
+          <button *ngIf="whatSelectedAction() == 5" id="selectButtonAction" mat-icon-button [matMenuTriggerFor]="nasaMenu" [matMenuTriggerData]="{name: 'Sally'}">{{data.action}}</button>
+          <button *ngIf="whatSelectedAction() == 6" id="selectButtonAction" mat-icon-button [matMenuTriggerFor]="redditMenu" [matMenuTriggerData]="{name: 'Sally'}">{{data.action}}</button>
+          <button *ngIf="whatSelectedAction() == 7" id="selectButtonAction" mat-icon-button [matMenuTriggerFor]="youtubeMenu" [matMenuTriggerData]="{name: 'Sally'}">{{data.action}}</button>
+          <mat-menu #moneycurrencyMenu="matMenu">
+            <button mat-menu-item (click)="selectAction('course', 'CAD')">CAD</button>
+            <button mat-menu-item (click)="selectAction('course', 'HKD')">HKD</button>
+            <button mat-menu-item (click)="selectAction('course', 'ISK')">ISK</button>
+            <button mat-menu-item (click)="selectAction('course', 'PHP')">PHP</button>
+            <button mat-menu-item (click)="selectAction('course', 'DKK')">DKK</button>
+            <button mat-menu-item (click)="selectAction('course', 'HUF')">HUF</button>
+            <button mat-menu-item (click)="selectAction('course', 'CZK')">CZK</button>
+            <button mat-menu-item (click)="selectAction('course', 'AUD')">AUD</button>
+            <button mat-menu-item (click)="selectAction('course', 'RON')">RON</button>
+            <button mat-menu-item (click)="selectAction('course', 'SEK')">SEK</button>
+            <button mat-menu-item (click)="selectAction('course', 'IDR')">IDR</button>
+            <button mat-menu-item (click)="selectAction('course', 'INR')">INR</button>
+            <button mat-menu-item (click)="selectAction('course', 'BRL')">BRL</button>
+            <button mat-menu-item (click)="selectAction('course', 'RUB')">RUB</button>
+            <button mat-menu-item (click)="selectAction('course', 'HRK')">HRK</button>
+            <button mat-menu-item (click)="selectAction('course', 'JPY')">JPY</button>
+            <button mat-menu-item (click)="selectAction('course', 'THB')">THB</button>
+            <button mat-menu-item (click)="selectAction('course', 'CHF')">CHF</button>
+            <button mat-menu-item (click)="selectAction('course', 'SGD')">SGD</button>
+            <button mat-menu-item (click)="selectAction('course', 'PLN')">PLN</button>
+            <button mat-menu-item (click)="selectAction('course', 'BGN')">BGN</button>
+            <button mat-menu-item (click)="selectAction('course', 'TRY')">TRY</button>
+            <button mat-menu-item (click)="selectAction('course', 'CNY')">CNY</button>
+            <button mat-menu-item (click)="selectAction('course', 'NOK')">NOK</button>
+            <button mat-menu-item (click)="selectAction('course', 'NZD')">NZD</button>
+            <button mat-menu-item (click)="selectAction('course', 'ZAR')">ZAR</button>
+            <button mat-menu-item (click)="selectAction('course', 'USD')">USD</button>
+            <button mat-menu-item (click)="selectAction('course', 'MXN')">MXN</button>
+            <button mat-menu-item (click)="selectAction('course', 'ILS')">ILS</button>
+            <button mat-menu-item (click)="selectAction('course', 'GBP')">GBP</button>
+            <button mat-menu-item (click)="selectAction('course', 'KRW')">KRW</button>
+            <button mat-menu-item (click)="selectAction('course', 'MYR')">MYR</button>
+          </mat-menu>
+          <mat-menu #youtubeVideoLikeMenu="matMenu">
+            <button mat-menu-item (click)="selectAction('like', 'Sneazy')">Sneazy</button>
+            <button mat-menu-item (click)="selectAction('like', 'RihannaDiamonds')">RihannaDiamonds</button>
+            <button mat-menu-item (click)="selectAction('like', 'DavidGuettaTitanium')">DavidGuettaTitanium</button>
+            <button mat-menu-item (click)="selectAction('like', 'PartyRockAnthems')">PartyRockAnthems</button>
+            <button mat-menu-item (click)="selectAction('like', 'oldTownRoad')">oldTownRoad</button>
+            <button mat-menu-item (click)="selectAction('like', 'HappierMarshmallow')">HappierMarshmallow</button>
+            <button mat-menu-item (click)="selectAction('like', 'AngeleOuiOuNon')">AngeleOuiOuNon</button>
+            <button mat-menu-item (click)="selectAction('like', 'NekfeuOnVerra')">NekfeuOnVerra</button>
+            <button mat-menu-item (click)="selectAction('like', 'OrelsanAlheureOu')">OrelsanAlheureOu</button>
+            <button mat-menu-item (click)="selectAction('like', 'MaitreGimsJemeTire')">MaitreGimsJemeTire</button>
+            <button mat-menu-item (click)="selectAction('like', 'ToxicBritney')">ToxicBritney</button>
+            <button mat-menu-item (click)="selectAction('like', 'Macklemore')">Macklemore</button>
+            <button mat-menu-item (click)="selectAction('like', 'EminemLoseYourself')">EminemLoseYourself</button>
+          </mat-menu>
+          <mat-menu #youtubeVideoDislikeMenu="matMenu">
+            <button mat-menu-item (click)="selectAction('dislike', 'Sneazy')">Sneazy</button>
+            <button mat-menu-item (click)="selectAction('dislike', 'RihannaDiamonds')">RihannaDiamonds</button>
+            <button mat-menu-item (click)="selectAction('dislike', 'DavidGuettaTitanium')">DavidGuettaTitanium</button>
+            <button mat-menu-item (click)="selectAction('dislike', 'PartyRockAnthems')">PartyRockAnthems</button>
+            <button mat-menu-item (click)="selectAction('dislike', 'oldTownRoad')">oldTownRoad</button>
+            <button mat-menu-item (click)="selectAction('dislike', 'HappierMarshmallow')">HappierMarshmallow</button>
+            <button mat-menu-item (click)="selectAction('dislike', 'AngeleOuiOuNon')">AngeleOuiOuNon</button>
+            <button mat-menu-item (click)="selectAction('dislike', 'NekfeuOnVerra')">NekfeuOnVerra</button>
+            <button mat-menu-item (click)="selectAction('dislike', 'OrelsanAlheureOu')">OrelsanAlheureOu</button>
+            <button mat-menu-item (click)="selectAction('dislike', 'MaitreGimsJemeTire')">MaitreGimsJemeTire</button>
+            <button mat-menu-item (click)="selectAction('dislike', 'ToxicBritney')">ToxicBritney</button>
+            <button mat-menu-item (click)="selectAction('dislike', 'Macklemore')">Macklemore</button>
+            <button mat-menu-item (click)="selectAction('dislike', 'EminemLoseYourself')">EminemLoseYourself</button>
+          </mat-menu>
+          <mat-menu #youtubeVideoCommentMenu="matMenu">
+            <button mat-menu-item (click)="selectAction('comment', 'Sneazy')">Sneazy</button>
+            <button mat-menu-item (click)="selectAction('comment', 'RihannaDiamonds')">RihannaDiamonds</button>
+            <button mat-menu-item (click)="selectAction('comment', 'DavidGuettaTitanium')">DavidGuettaTitanium</button>
+            <button mat-menu-item (click)="selectAction('comment', 'PartyRockAnthems')">PartyRockAnthems</button>
+            <button mat-menu-item (click)="selectAction('comment', 'oldTownRoad')">oldTownRoad</button>
+            <button mat-menu-item (click)="selectAction('comment', 'HappierMarshmallow')">HappierMarshmallow</button>
+            <button mat-menu-item (click)="selectAction('comment', 'AngeleOuiOuNon')">AngeleOuiOuNon</button>
+            <button mat-menu-item (click)="selectAction('comment', 'NekfeuOnVerra')">NekfeuOnVerra</button>
+            <button mat-menu-item (click)="selectAction('comment', 'OrelsanAlheureOu')">OrelsanAlheureOu</button>
+            <button mat-menu-item (click)="selectAction('comment', 'MaitreGimsJemeTire')">MaitreGimsJemeTire</button>
+            <button mat-menu-item (click)="selectAction('comment', 'ToxicBritney')">ToxicBritney</button>
+            <button mat-menu-item (click)="selectAction('comment', 'Macklemore')">Macklemore</button>
+            <button mat-menu-item (click)="selectAction('comment', 'EminemLoseYourself')">EminemLoseYourself</button>
+          </mat-menu>
+          <mat-menu #youtubeViewsCommentMenu="matMenu">
+            <button mat-menu-item (click)="selectAction('views', 'Sneazy')">Sneazy</button>
+            <button mat-menu-item (click)="selectAction('views', 'RihannaDiamonds')">RihannaDiamonds</button>
+            <button mat-menu-item (click)="selectAction('views', 'DavidGuettaTitanium')">DavidGuettaTitanium</button>
+            <button mat-menu-item (click)="selectAction('views', 'PartyRockAnthems')">PartyRockAnthems</button>
+            <button mat-menu-item (click)="selectAction('views', 'oldTownRoad')">oldTownRoad</button>
+            <button mat-menu-item (click)="selectAction('views', 'HappierMarshmallow')">HappierMarshmallow</button>
+            <button mat-menu-item (click)="selectAction('views', 'AngeleOuiOuNon')">AngeleOuiOuNon</button>
+            <button mat-menu-item (click)="selectAction('views', 'NekfeuOnVerra')">NekfeuOnVerra</button>
+            <button mat-menu-item (click)="selectAction('views', 'OrelsanAlheureOu')">OrelsanAlheureOu</button>
+            <button mat-menu-item (click)="selectAction('views', 'MaitreGimsJemeTire')">MaitreGimsJemeTire</button>
+            <button mat-menu-item (click)="selectAction('views', 'ToxicBritney')">ToxicBritney</button>
+            <button mat-menu-item (click)="selectAction('views', 'Macklemore')">Macklemore</button>
+            <button mat-menu-item (click)="selectAction('views', 'EminemLoseYourself')">EminemLoseYourself</button>
+          </mat-menu>
+          <mat-menu #weatherChangeMenu="matMenu">
+            <button mat-menu-item (click)="selectAction('temperature', 'Lyon')">Lyon</button>
+            <button mat-menu-item (click)="selectAction('temperature', 'Paris')">Paris</button>
+            <button mat-menu-item (click)="selectAction('temperature', 'Marseille')">Marseille</button>
+          </mat-menu>
+          <mat-menu #redditAccountMenu="matMenu">
+            <button mat-menu-item (click)="selectAction('new_post', 'nonononoyes')">Nonononoyes</button>
+            <button mat-menu-item (click)="selectAction('new_post', 'memes')">Memes</button>
+            <button mat-menu-item (click)="selectAction('new_post', 'facepalm')">Facepalm</button>
+          </mat-menu>
+        </div>
+      </div>
+  </div>
+<div mat-dialog-actions>
+  <button mat-button (click)="closeModal()">Cancel</button>
+  <button *ngIf="disabledButton() == 0; else buttonDisabledAction" id="nextbuttonReaction" mat-button (click)="nextModal()" cdkFocusInitial>Next</button>
+  <ng-template #buttonDisabledAction>
+    <button id="nextbuttonReaction" disabled mat-button (click)="nextModal()" cdkFocusInitial>Next</button>
+  </ng-template>
+</div>
